@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: healthcareproject-deployment  # The name of the service
+  name: healthcareproject-deployment  
 spec:
-  type: NodePort  # Expose the service on a node port
+  type: NodePort 
   selector:
-    app: healthcareproject-deployment  # This selector matches the pods to route traffic to
+    app: healthcareproject-deployment  
   ports:
-    - protocol: TCP  # The protocol the service will use
-      port: 8082  # The port that the service exposes
-      targetPort: 8082  # The port the container listens on
-      nodePort: 30000  # The node port the service will be available on
+    - protocol: TCP  
+      port: 8082  
+      targetPort: 8082 
+      nodePort: 
